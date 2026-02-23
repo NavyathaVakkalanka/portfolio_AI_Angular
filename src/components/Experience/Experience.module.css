@@ -1,0 +1,160 @@
+/* ============================================
+   Experience Timeline Styles
+   ============================================ */
+
+.experience {
+    background: var(--color-white);
+}
+
+.timeline {
+    position: relative;
+    padding: 1rem 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Centre vertical line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--color-accent), rgba(201, 168, 76, 0.2));
+    transform: translateX(-50%);
+}
+
+.timelineItem {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: calc(50% + 2.5rem);
+    margin-bottom: 3.5rem;
+    position: relative;
+}
+
+.timelineItem.right {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: calc(50% + 2.5rem);
+}
+
+/* Dot on the line */
+.dot {
+    position: absolute;
+    left: 50%;
+    top: 1.5rem;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    border: 3px solid var(--color-white);
+    box-shadow: 0 0 0 3px var(--color-accent);
+    z-index: 1;
+}
+
+/* Card */
+.timelineCard {
+    background: var(--color-bg);
+    border-radius: var(--radius-md);
+    padding: 1.75rem 2rem;
+    box-shadow: var(--shadow-card);
+    border: 1px solid rgba(13, 27, 62, 0.06);
+    width: 100%;
+    max-width: 400px;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.timelineCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.role {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.japanBadge {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-light));
+    color: var(--color-primary);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+}
+
+.company {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+}
+
+.duration {
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+}
+
+.highlights {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.highlights li {
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    padding-left: 1.2rem;
+    position: relative;
+    line-height: 1.5;
+}
+
+.highlights li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-size: 0.7rem;
+    top: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 1rem;
+    }
+
+    .timelineItem,
+    .timelineItem.right {
+        justify-content: flex-start;
+        padding-left: 3.5rem;
+        padding-right: 0;
+    }
+
+    .dot {
+        left: 1rem;
+        transform: translateX(-50%);
+    }
+
+    .timelineCard {
+        max-width: 100%;
+    }
+}
