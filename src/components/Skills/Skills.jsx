@@ -4,10 +4,10 @@ import styles from './Skills.module.css';
 const SKILLS = [
     { icon: '🎫', name: 'TKT (Ticketing)', category: 'Core Domain', desc: 'Airline ticketing workflows, fare construction, and end-to-end ticketing processes.' },
     { icon: '🛬', name: 'DCS', category: 'Core Domain', desc: 'Departure Control System — passenger check-in, boarding, and seat allocation.' },
-    { icon: '🌐', name: 'Altea PSS', category: 'Platform', desc: 'Amadeus Altea Passenger Services System — deep functional expertise.' },
+    { icon: '🌐', name: 'Altea PSS', category: 'Platform', desc: 'Altea Passenger Service System — deep functional expertise across airline operations.' },
     { icon: '🔗', name: 'API & Web Services', category: 'Technical', desc: 'REST/SOAP API testing, integration validation, and web service query resolution.' },
     { icon: '🚀', name: 'AAL', category: 'Tools', desc: 'Amadeus Application Launcher — configuration and workflow management.' },
-    { icon: '⚙️', name: 'XPP', category: 'Tools', desc: 'Amadeus XPP system — in-depth technical knowledge and support.' },
+    { icon: '⚙️', name: 'XPP', category: 'Tools', desc: 'XPP system — in-depth technical knowledge and support.' },
     { icon: '📁', name: 'CM', category: 'Tools', desc: 'Configuration Management — system config, parameter setup, and maintenance.' },
     { icon: '🌍', name: 'ARD Web', category: 'Tools', desc: 'ARD Web platform — expertise in platform operations and client support.' },
     { icon: '🤝', name: 'Stakeholder Mgmt', category: 'Soft Skill', desc: 'Cross-functional communication, requirement gathering, and client management.' },
