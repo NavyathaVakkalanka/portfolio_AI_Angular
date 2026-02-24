@@ -13,16 +13,21 @@
     text-align: center;
 }
 
-.contactInner .section-label {
+.contactInner :global(.section-label) {
     color: var(--color-accent);
 }
 
-.contactInner .section-title,
-.contactInner .section-title span {
+.contactInner :global(.section-title) {
     color: var(--color-white);
 }
 
-.contactInner .section-divider {
+.contactInner :global(.section-title) span {
+    color: var(--color-accent);
+}
+
+.contactInner :global(.section-divider) {
+    width: 100%;
+    max-width: 560px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -39,7 +44,6 @@
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
 }
 
 .contactLink {
@@ -68,62 +72,7 @@
     font-size: 1.25rem;
 }
 
-/* Form */
-.form {
-    display: grid;
-    gap: 1rem;
-    max-width: 560px;
-    margin: 0 auto;
-}
-
-.formRow {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.formInput,
-.formTextarea {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: var(--radius-sm);
-    padding: 0.85rem 1.1rem;
-    color: var(--color-white);
-    font-family: var(--font-body);
-    font-size: 0.9rem;
-    transition: border-color var(--transition), background var(--transition);
-    outline: none;
-}
-
-.formInput::placeholder,
-.formTextarea::placeholder {
-    color: rgba(255, 255, 255, 0.3);
-}
-
-.formInput:focus,
-.formTextarea:focus {
-    border-color: var(--color-accent);
-    background: rgba(255, 255, 255, 0.09);
-}
-
-.formTextarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.formNote {
-    font-size: 0.78rem;
-    color: rgba(255, 255, 255, 0.35);
-    text-align: center;
-    margin-top: 0.5rem;
-}
-
 @media (max-width: 560px) {
-    .formRow {
-        grid-template-columns: 1fr;
-    }
-
     .contactLinks {
         flex-direction: column;
         align-items: center;

@@ -1,4 +1,5 @@
 import styles from './Hero.module.css';
+import HeroIllustration from './HeroIllustration';
 
 export default function Hero() {
     const scrollToSection = (id) => {
@@ -35,20 +36,14 @@ export default function Hero() {
                     </div>
                 </div>
 
-                {/* Right — avatar */}
+                {/* Right — illustration */}
                 <div className={styles.heroImageWrap}>
-                    <div className={styles.avatarRing}>
-                        <div className={styles.avatarInner}>
-                            <img
-                                src="/profile-placeholder.svg"
-                                alt="Navyatha Vakkalanka — Business Analyst"
-                                className={styles.avatarImg}
-                            />
-                        </div>
+                    <div className={styles.illustrationWrap}>
+                        <HeroIllustration />
 
                         {/* Floating badges */}
                         <div className={`${styles.badge} ${styles.badge1}`}>
-                            🇯🇵 Japan Onsite
+                            Japan
                         </div>
                         <div className={`${styles.badge} ${styles.badge2}`}>
                             ✈️ Airline PSS Expert

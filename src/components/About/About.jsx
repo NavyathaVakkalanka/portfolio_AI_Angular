@@ -5,7 +5,7 @@ const STATS = [
     { icon: '⏳', value: '4 Years', label: 'Experience' },
     { icon: '✈️', value: 'Airline', label: 'Domain' },
     { icon: '🏢', value: 'TCS', label: 'Company' },
-    { icon: '🇯🇵', value: '2 Years', label: 'Japan Onsite' },
+    { icon: '🌏', value: '2 Years', label: 'Japan' },
     { icon: '📋', value: 'BA', label: 'Current Role' },
     { icon: '🔬', value: '1.5 Yrs', label: 'SW Testing' },
 ];
@@ -32,7 +32,7 @@ export default function About() {
                         </p>
                         <br />
                         <p>
-                            Currently based in <strong>Japan 🇯🇵</strong> with 2 years of valuable onsite
+                            Currently based in <strong>Japan</strong> with 2 years of valuable onsite
                             experience, collaborating with global clients and cross-functional teams to
                             deliver high-quality solutions in a fast-paced airline environment.
                         </p>

@@ -26,7 +26,7 @@ const EXPERIENCE = [
             'Stakeholder & client interaction for requirement gathering',
             'Query resolution for Altea PSS and Web Services',
             'Working across TKT and DCS domains',
-            'Onsite collaboration with Japanese airline clients 🇯🇵',
+            'Onsite collaboration with Japanese airline clients',
             'Expertise in AAL, XPP, CM, and ARD Web tools',
         ],
     },
@@ -52,7 +52,7 @@ export default function Experience() {
                             <div className={styles.timelineCard}>
                                 <div className={styles.cardHeader}>
                                     <div className={styles.role}>{entry.role}</div>
-                                    {entry.japan && <span className={styles.japanBadge}>🇯🇵 Japan Onsite</span>}
+                                    {entry.japan && <span className={styles.japanBadge}>Japan</span>}
                                 </div>
                                 <div className={styles.company}>{entry.company}</div>
                                 <div className={styles.duration}>{entry.duration}</div>
